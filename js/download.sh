@@ -8,8 +8,11 @@ JS=( "https://code.jquery.com/jquery-3.1.1.min.js" "http://momentjs.com/download
 #---------------------------------------------------#
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+TARGET="$DIR/vendor"
 
 cd "$DIR"
+mkdir -p "$TARGET"
+cd "$TARGET"
 
 echo "Downloading js files...."
 for i in "${JS[@]}"; do
