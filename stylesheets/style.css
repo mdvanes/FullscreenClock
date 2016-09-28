@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 7.5vw;
+  background-color: black;
+  color: white;
+}
+.fat {
+  width: 98vw;
+  height: 98vh;
+}
+.valign-wrapper {
+  align-items: center;
+  display: flex;
+}
+.valign-wrapper > .valign {
+  display: block;
+}
+.center-text {
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}

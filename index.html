@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Comment the following line out if you want to use offline fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<!-- Uncomment the following line if you want to use offline fonts. You also have to download those fonts. See fonts/download.sh -->
+	<!-- <link href="stylesheets/offline-fonts.css" rel="stylesheet"> -->
+	<link href="stylesheets/style.css" rel="stylesheet">
+	<title>Current Time</title>
+</head>
+<body>
+	<div id="time" class="valign-wrapper fat center-text"></div>
+	<!-- Comment the following line out if you want to use offline javascripts-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://momentjs.com/downloads/moment.js"></script>
+	<!-- Uncomment the following line if you want to use offline javascripts. You also have to download those javascripts. See js/download.sh -->
+	<!--
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/moment.js"></script>
+	-->
+	<script>
+		function getParameterByName(name, url) { // Stolen from https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+					results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+		function setTime() {
+			time = '<h1 class="valign center-text">' + moment().format('HH:mm:ss.S') + '</h1>';
+			$('#time').html(time);
+		}
+
+		var time = '';
+		var bg = getParameterByName('bg');
+		var fg = getParameterByName('fg');
+
+		if (bg) $('body').css({'background-color': bg});
+		if (fg) $('body').css({'color': fg});
+
+		moment.locale('de');
+		setTime();
+		setInterval(setTime, 100);
+	</script>
+</body>
+</html>
