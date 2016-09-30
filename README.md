@@ -16,3 +16,4 @@ Open the `index.html` file with a browser. Done.
 * `index.html?bg=red&fg=blue` - red background and blue text (even if I'd not recommend to use this color combination)
 * `index.html?bg=%231A9096&fg=%234D4D4D` - you can use hex colors too
 * `index.html?bg=rgb(255,25,0)&fg=rgb(77,77,77)` - or rgb
+* `index.html?bg=r&fg=r` - fancy rainbow background/text
