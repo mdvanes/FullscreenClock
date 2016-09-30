@@ -8,7 +8,7 @@ function getParameterByName(name, url) { // Stolen from https://stackoverflow.co
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 function setTime() {
-  time = '<h1 class="valign center-text">' + moment().format('HH:mm:ss.S') + '</h1>';
+  time = '<span class="valign center-text">' + moment().format('HH:mm:ss.S') + '</span>';
   $('#time').html(time);
 }
 
@@ -16,8 +16,20 @@ var time = '';
 var bg = getParameterByName('bg');
 var fg = getParameterByName('fg');
 
-if (bg) $('body').css({'background-color': bg});
-if (fg) $('body').css({'color': fg});
+if (bg) {
+  if (bg === 'r') {
+    $('body').addClass('rainbow-background');
+  } else {
+    $('body').css({'background-color': bg});
+  }
+}
+if (fg) {
+  if (fg === 'r') {
+    $('#time').addClass('rainbow-text');
+  } else {
+    $('#time').css({'color': fg});
+  }
+}
 
 moment.locale('de');
 setTime();
