@@ -6,6 +6,8 @@ Its a clock. Amazing. I know.
 
 Open the `index.html` file with a browser. Done.
 
+You can find a hosted version [here](https://derenderkeks.github.io/FullscreenClock/).
+
 #####But wait! There is more!
 
 ######Parameters:
