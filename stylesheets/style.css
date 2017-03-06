@@ -30,55 +30,36 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.rainbow-text {
-  animation: rainbowTextAnimation 6s linear 0s infinite;
+.rainbow {
+  animation: rainbowAnimation 6s linear 0s infinite;
 }
-.rainbow-background {
-  animation: rainbowBackgroundAnimation 6s linear 0s infinite;
-}
-@keyframes rainbowTextAnimation {
+@keyframes rainbowAnimation {
   from {
     color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 255);
   }
   16.6% {
     color: rgb(255, 0, 255);
+    background-color: rgb(0, 255, 0);
   }
   33.3% {
     color: rgb(0, 0, 255);
+    background-color: rgb(255, 255, 0);
   }
   50% {
     color: rgb(0, 255, 255);
+    background-color: rgb(255, 0, 0);
   }
   66.6% {
     color: rgb(0, 255, 0);
+    background-color: rgb(255, 0, 255);
   }
   83.3% {
     color: rgb(255, 255, 0);
+    background-color: rgb(0, 0, 255);
   }
   to {
     color: rgb(255, 0, 0);
-  }
-}
-@keyframes rainbowBackgroundAnimation {
-  from {
-    background-color: rgb(0, 255, 0); //5
-  }
-  16.6% {
-    background-color: rgb(255, 255, 0); //6
-  }
-  33.3% {
-    background-color: rgb(255, 0, 0); //7
-  }
-  50% {
-    background-color: rgb(255, 0, 0); //1
-  }
-  66.6% {
-    background-color: rgb(255, 0, 255); //2
-  }
-  83.3% {
-    background-color: rgb(0, 0, 255); //3
-  }
-  to {
-    background-color: rgb(0, 255, 255); //4
+    background-color: rgb(0, 255, 255);
   }
 }

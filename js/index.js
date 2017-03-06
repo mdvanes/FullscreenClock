@@ -18,14 +18,14 @@ var fg = getParameterByName('fg');
 
 if (bg) {
   if (bg === 'r') {
-    $('body').addClass('rainbow-background');
+    $('body').addClass('rainbow');
   } else {
     $('body').css({'background-color': bg});
   }
 }
 if (fg) {
   if (fg === 'r') {
-    $('#time').addClass('rainbow-text');
+    $('#time').addClass('rainbow');
   } else {
     $('#time').css({'color': fg});
   }
