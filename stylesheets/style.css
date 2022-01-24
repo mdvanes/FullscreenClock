@@ -12,18 +12,19 @@ body {
   margin: 0;
   padding: 0;
   text-align: right !important;
+  height: calc(100vh - 120px);
 }
 
 .fat > span {
   animation: moveAnimation 3000s linear 0s infinite;
-  margin-right: 10000px;
+/*   margin-right: 10000px; */
   white-space: nowrap;
 }
 
 @keyframes moveAnimation {
-  0%   {margin-right:100%;}
+  0%   {margin-right:35%;}
   50%  {margin-right:0;}
-  100% {margin-right:100%;}
+  100% {margin-right:35%;}
 }
 
 .valign-wrapper {
