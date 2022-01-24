@@ -8,7 +8,8 @@ function getParameterByName(name, url) { // Stolen from https://stackoverflow.co
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 function setTime() {
-  time = '<span class="valign center-text">' + moment().format('HH:mm:ss.S') + '</span>';
+  //   time = '<span class="valign center-text">' + moment().format('HH:mm:ss.S') + '</span>';
+  time = '<span class="valign center-text">' + moment().format('HH:mm') + '</span>';
   $('#time').html(time);
 }
 
