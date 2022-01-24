@@ -32,6 +32,22 @@ if (fg) {
   }
 }
 
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "f") {
+    toggleFullScreen();
+  }
+}, false);
+
 moment.locale('de');
 setTime();
 setInterval(setTime, 100);
