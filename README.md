@@ -6,7 +6,7 @@ A clock for my laptop screen that I can't really use anyway. Based on https://gi
 
 Open the `index.html` file with a browser. Done.
 
-You can find a hosted version [here](http://mdworld.nl/FullscreenClock/).
+You can find a hosted version [here](https://mdworld.nl/FullscreenClock/).
 
 ## But wait! There is more!
 
