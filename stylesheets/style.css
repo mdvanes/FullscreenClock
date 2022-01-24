@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 body {
   /*   font-family: "Roboto Mono", monospace; */
   font-family: "Montserrat", sans-serif;
-  font-size: 15vw;
+  font-size: 25vw;
   font-weight: bold;
   background-color: black;
   color: white;
