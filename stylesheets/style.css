@@ -24,20 +24,20 @@ body {
 
 @keyframes moveAnimation {
   from {
-    left: -45%;
+    transform:translate(0);
   }
   50% {
-    left: 0;
-    right: -45%;
+    transform:translate(30%);
   }
   to {
-    left: -45%;
+    transform:translate(0);
   }
 }
 
 .valign-wrapper {
   align-items: center;
   display: flex;
+  padding: 2rem;
 }
 .valign-wrapper > .valign {
   display: block;
@@ -45,8 +45,8 @@ body {
 .center-text {
   text-align: center;
   vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 .rainbow {
   animation: rainbowAnimation 6s linear 0s infinite;
