@@ -9,8 +9,8 @@ function getParameterByName(name, url) { // Stolen from https://stackoverflow.co
 }
 function setTime() {
   //   time = '<span class="valign center-text">' + moment().format('HH:mm:ss.S') + '</span>';
-  time = '<span class="valign center-text">' + moment().format('HH:mm') + '</span>';
-  $('#time').html(time);
+  time = moment().format('HH:mm');
+  $('#timestamp').html(time);
 }
 
 var time = '';
