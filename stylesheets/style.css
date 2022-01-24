@@ -19,7 +19,22 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
+  animation: moveAnimation 3000s linear 0s infinite;
 }
+
+@keyframes moveAnimation {
+  from {
+    left: -45%;
+  }
+  50% {
+    left: 0;
+    right: -45%;
+  }
+  to {
+    left: -45%;
+  }
+}
+
 .valign-wrapper {
   align-items: center;
   display: flex;
