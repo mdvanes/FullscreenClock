@@ -10,6 +10,8 @@ You can find a hosted version [here](http://mdworld.nl/FullscreenClock/).
 
 ## But wait! There is more!
 
+Press `f` for full screen mode
+
 ### Parameters:
 * `bg`: background color
 * `fg`: text color
